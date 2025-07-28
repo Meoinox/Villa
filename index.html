@@ -1,113 +1,86 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Villa - Quảng Cáo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Villa Heo Mèo</title>
   <style>
     body {
+      background-color: #fefefe;
       margin: 0;
       padding: 0;
-      font-family: sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       text-align: center;
-      color: white;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-image: url('https://i.ibb.co/gMSvRXJm/t-i-xu-ng-1.webp');
     }
 
-    @media only screen and (max-width: 768px) {
-      body {
-        background-image: url('https://i.ibb.co/1YBmS52D/t-i-xu-ng.webp');
-      }
+    .center {
+      padding: 30px 10px;
     }
 
-    .ad-container {
-      width: 90%;
-      max-width: 600px;
-      background: rgba(0, 0, 0, 0.6);
-      padding: 2vw;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
-      margin-top: 3vh;
+    h2 {
+      color: #444;
     }
 
     .side-img {
-      position: fixed;
-      top: 10%;
-      width: 10vw;
-      max-width: 100px;
-      height: auto;
-      z-index: 1;
+      position: absolute;
+      top: 20%;
+      width: 18%;
+      max-width: 120px;
     }
 
     .left-img {
-      left: 0;
+      left: 10px;
     }
 
     .right-img {
-      right: 0;
+      right: 10px;
     }
 
-    .bottom-wrapper {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      z-index: 2;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    .bottom-img-container {
+      margin-top: 40px;
+      padding: 10px;
     }
 
-    .bottom-img {
-      width: 100%;
-      max-height: 20vh;
-      object-fit: contain;
+    .bottom-img-container img {
+      width: 30%;
+      max-width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 
-    .bottom-text {
-      margin-top: 5px;
-      font-size: 3.5vw;
-      color: pink;
+    .bottom-img-container p {
+      margin-top: 10px;
+      font-size: 15px;
+      color: #444;
     }
 
-    @media (min-width: 769px) {
-      h1 {
-        font-size: 2.5vw;
+    @media only screen and (max-width: 600px) {
+      .side-img {
+        display: none;
       }
-      p {
-        font-size: 1.8vw;
-      }
-      .bottom-text {
-        font-size: 1.5vw;
+
+      .bottom-img-container img {
+        width: 60%;
       }
     }
   </style>
 </head>
 <body>
-  <!-- Ảnh hai bên -->
-  <img class="side-img left-img" src="https://drive.google.com/uc?export=view&id=1plVNzVpmCrs24_ccvL7DQ2TQqbLRnKsA" alt="ảnh bên trái">
-  <img class="side-img right-img" src="https://drive.google.com/uc?export=view&id=1pn0J1aGwApOn0JJODDtVBj8gQkHU9KCB" alt="ảnh bên phải">
-
-  <div class="ad-container">
-    <h1>📺 Cảm ơn bạn đã đến Villa!</h1>
+  <div class="center">
+    <h2>📺 Cảm ơn bạn đã đến Villa!</h2>
     <p>Xem quảng cáo bên dưới để nhận quà từ Quản Gia 🤗</p>
-
-    <!-- MÃ ADSTERA DÁN Ở ĐÂY -->
-    <script type="text/javascript" src="https://YOUR_ADSTERRA_SCRIPT.js"></script>
   </div>
 
-  <!-- Ảnh dưới cùng + dòng chữ -->
-  <div class="bottom-wrapper">
-    <img class="bottom-img" src="https://drive.google.com/uc?export=view&id=1pmpGl796A7-y-OcnPFeL4PBmJS8UHbPc" alt="quản gia sexy">
-    <div class="bottom-text">nếu chán xem quảng cáo thì bạn ngắm quản gia đỡ nhé 😘✨</div>
+  <!-- Ảnh hai bên -->
+  <img class="side-img left-img" src="dung1.png" alt="Ảnh bên trái">
+  <img class="side-img right-img" src="dung2.png" alt="Ảnh bên phải">
+
+  <!-- Ảnh quản gia sexy dưới cùng -->
+  <div class="bottom-img-container">
+    <img src="nam.png" alt="Quản Gia sexy">
+    <p>nếu chán quảng cáo thì ngắm quản gia đỡ nhé bạn 😏</p>
   </div>
+
+  <!-- QUẢNG CÁO: bạn có thể dán script Adsterra tại đây sau khi được duyệt -->
 </body>
 </html>
