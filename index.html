@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Villa - Quảng Cáo</title>
   <style>
     body {
@@ -19,14 +19,9 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-    }
-
-    /* 🌄 Hình nền desktop */
-    body {
       background-image: url('https://i.ibb.co/gMSvRXJm/t-i-xu-ng-1.webp');
     }
 
-    /* 🌄 Hình nền mobile */
     @media only screen and (max-width: 768px) {
       body {
         background-image: url('https://i.ibb.co/1YBmS52D/t-i-xu-ng.webp');
@@ -41,7 +36,6 @@
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
       margin-top: 3vh;
-      z-index: 3;
     }
 
     .side-img {
@@ -67,9 +61,9 @@
       left: 0;
       width: 100%;
       z-index: 2;
-      text-align: center;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 0.5em 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .bottom-img {
@@ -79,19 +73,9 @@
     }
 
     .bottom-text {
-      font-size: 1.2em;
-      margin-bottom: 0.3em;
-      color: #ffccff;
-    }
-
-    h1 {
-      font-size: 5vw;
-      margin-bottom: 1vh;
-    }
-
-    p {
-      font-size: 4vw;
-      margin-top: 0;
+      margin-top: 5px;
+      font-size: 3.5vw;
+      color: pink;
     }
 
     @media (min-width: 769px) {
@@ -108,11 +92,10 @@
   </style>
 </head>
 <body>
-  <!-- Hai bên -->
+  <!-- Ảnh hai bên -->
   <img class="side-img left-img" src="https://drive.google.com/uc?export=view&id=1plVNzVpmCrs24_ccvL7DQ2TQqbLRnKsA" alt="ảnh bên trái">
   <img class="side-img right-img" src="https://drive.google.com/uc?export=view&id=1pn0J1aGwApOn0JJODDtVBj8gQkHU9KCB" alt="ảnh bên phải">
 
-  <!-- Nội dung chính -->
   <div class="ad-container">
     <h1>📺 Cảm ơn bạn đã đến Villa!</h1>
     <p>Xem quảng cáo bên dưới để nhận quà từ Quản Gia 🤗</p>
@@ -121,10 +104,10 @@
     <script type="text/javascript" src="https://YOUR_ADSTERRA_SCRIPT.js"></script>
   </div>
 
-  <!-- Ảnh đáy với chú thích -->
+  <!-- Ảnh dưới cùng + dòng chữ -->
   <div class="bottom-wrapper">
-    <div class="bottom-text">nếu chán xem quảng cáo thì bạn ngắm quản gia đỡ nhé 😏</div>
     <img class="bottom-img" src="https://drive.google.com/uc?export=view&id=1pmpGl796A7-y-OcnPFeL4PBmJS8UHbPc" alt="quản gia sexy">
+    <div class="bottom-text">nếu chán xem quảng cáo thì bạn ngắm quản gia đỡ nhé 😘✨</div>
   </div>
 </body>
 </html>
