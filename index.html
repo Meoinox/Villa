@@ -2,13 +2,106 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Villa - Quảng Cáo</title>
-</head>
-<body style="font-family:sans-serif; text-align:center; padding:40px;">
-  <h1>🎬 Cảm ơn bạn đã đến Villa</h1>
-  <p>Xem quảng cáo bên dưới để nhận quà từ Quản Gia 🤗</p>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      text-align: center;
+      color: white;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-  <!-- DÁN MÃ ADSTERRA CỦA BẠN VÀO DƯỚI ĐÂY -->
-  <script type="text/javascript" src="https://YOUR_ADSTERRA_SCRIPT.js"></script>
+    /* 🌄 Hình nền desktop */
+    body {
+      background-image: url('https://i.ibb.co/gMSvRXJm/t-i-xu-ng-1.webp');
+    }
+
+    /* 🌄 Hình nền mobile */
+    @media only screen and (max-width: 768px) {
+      body {
+        background-image: url('https://i.ibb.co/1YBmS52D/t-i-xu-ng.webp');
+      }
+    }
+
+    .ad-container {
+      width: 90%;
+      max-width: 600px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2vw;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      margin-top: 3vh;
+    }
+
+    .side-img {
+      position: fixed;
+      top: 10%;
+      width: 10vw;
+      max-width: 100px;
+      height: auto;
+      z-index: 1;
+    }
+
+    .left-img {
+      left: 0;
+    }
+
+    .right-img {
+      right: 0;
+    }
+
+    .bottom-img {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      max-height: 20vh;
+      object-fit: contain;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 5vw;
+      margin-bottom: 1vh;
+    }
+
+    p {
+      font-size: 4vw;
+      margin-top: 0;
+    }
+
+    @media (min-width: 769px) {
+      h1 {
+        font-size: 2.5vw;
+      }
+      p {
+        font-size: 1.8vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img class="side-img left-img" src="https://i.ibb.co/TM2P7mD/5.jpg" alt="ảnh bên trái">
+  <img class="side-img right-img" src="https://i.ibb.co/R4kkx0b3/t-i-xu-ng.jpg" alt="ảnh bên phải">
+
+  <div class="ad-container">
+    <h1>📺 Cảm ơn bạn đã đến Villa!</h1>
+    <p>Xem quảng cáo bên dưới để nhận quà từ Quản Gia 🤗</p>
+
+    <!-- MÃ ADSTERA DÁN Ở ĐÂY -->
+    <script type="text/javascript" src="https://YOUR_ADSTERRA_SCRIPT.js"></script>
+  </div>
+
+  <img class="bottom-img" src="https://i.ibb.co/vGdLFZ3/image.jpg" alt="quản gia sexy">
 </body>
 </html>
