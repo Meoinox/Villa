@@ -2,116 +2,138 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Villa Heo Mèo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Villa Ads</title>
   <style>
-    /* Ảnh nền tùy theo thiết bị */
-    body {
+    * {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-image: url('pc.webp'); /* Mặc định: PC */
-      background-repeat: no-repeat;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('./mobi.webp');
       background-size: cover;
-      background-position: center center;
-      color: #fff;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: space-between;
     }
 
-    /* Nếu là điện thoại */
-    @media (max-width: 768px) {
-      body {
-        background-image: url('mobi.webp');
-      }
+    h1, p {
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.85);
     }
 
-    .container {
-      padding: 5vh 5vw;
-      background-color: rgba(0, 0, 0, 0.5);
-      min-height: 100vh;
+    header {
+      text-align: center;
+      padding: 1rem 0 0.5rem;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .adspace {
+      background: rgba(0,0,0,0.3);
+      margin: 0.5rem auto;
+      width: 90%;
+      max-width: 600px;
+      height: 90px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
       text-align: center;
     }
 
-    h2 {
-      font-size: 2.5vw;
-      margin-bottom: 1vh;
-    }
-
-    p {
-      font-size: 1.5vw;
-      color: #f0f0f0;
+    .img-row {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      padding: 0.5rem 1rem;
     }
 
     .side-img {
-      position: absolute;
-      top: 25vh;
-      width: 18vw;
-      max-width: 220px;
+      width: 24vw;
+      max-width: 110px;
       border-radius: 10px;
     }
 
-    .left-img {
-      left: 2vw;
+    footer {
+      text-align: center;
+      padding: 0.5rem;
     }
 
-    .right-img {
-      right: 2vw;
-    }
-
-    .bottom-img-container {
-      margin-top: 10vh;
-    }
-
-    .bottom-img-container img {
-      width: 60vw;
+    .bottom-img {
+      width: 85vw;
       max-width: 500px;
-      border-radius: 15px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+      border-radius: 16px;
+      display: block;
+      margin: 0 auto 0.5rem;
     }
 
-    .bottom-img-container p {
-      margin-top: 1vh;
-      font-size: 1.3vw;
-      color: #ddd;
+    .caption {
+      margin-top: 0.3rem;
+      font-weight: 600;
+      font-size: 1rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
     }
 
-    /* MOBILE tối ưu lại */
-    @media only screen and (max-width: 768px) {
-      h2 {
-        font-size: 5vw;
+    @media (min-width: 768px) {
+      body {
+        background-image: url('./pc.webp');
       }
 
-      p {
-        font-size: 4vw;
+      h1 {
+        font-size: 2rem;
       }
 
       .side-img {
-        display: none;
+        width: 15vw;
+        max-width: 150px;
       }
 
-      .bottom-img-container img {
-        width: 80vw;
+      .bottom-img {
+        width: 60vw;
       }
 
-      .bottom-img-container p {
-        font-size: 4vw;
+      .adspace {
+        height: 120px;
+        font-size: 1.2rem;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h2>📺 Cảm ơn bạn đã đến Villa!</h2>
-    <p>Xem quảng cáo bên dưới để nhận quà từ Quản Gia 🤗</p>
 
-    <!-- Ảnh hai bên -->
-    <img class="side-img left-img" src="dung1.png" alt="Ảnh trái sexy" />
-    <img class="side-img right-img" src="dung2.png" alt="Ảnh phải sexy" />
+  <!-- Phần tiêu đề và chữ chào -->
+  <header>
+    <h1>Xem quảng cáo bên dưới để nhận quà từ Quản Gia 🤗</h1>
+  </header>
 
-    <!-- Ảnh chính giữa -->
-    <div class="bottom-img-container">
-      <img src="nam.png" alt="Quản Gia sexy" />
-      <p>nếu chán quảng cáo thì ngắm quản gia đỡ nhé bạn 😏</p>
-    </div>
+  <!-- Quảng cáo Adsterra hoặc khung để nhúng -->
+  <div class="adspace">
+    <!-- Gắn script quảng cáo ở đây -->
+    [ Quảng cáo hiển thị ở đây ]
   </div>
+
+  <!-- Hai ảnh gái đứng 2 bên -->
+  <div class="img-row">
+    <img src="./dung1.png" alt="Gái bên trái" class="side-img">
+    <img src="./nam.png" alt="Gái bên phải" class="side-img">
+  </div>
+
+  <!-- Ảnh gái nằm và caption bên dưới sát đáy màn -->
+  <footer>
+    <img src="./dung2.png" alt="Quản gia nằm" class="bottom-img">
+    <div class="caption">nếu chán quảng cáo thì ngắm quản gia đỡ nhé bạn 😏</div>
+  </footer>
+
 </body>
 </html>
